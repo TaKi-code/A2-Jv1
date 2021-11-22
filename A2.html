@@ -7,30 +7,17 @@
 </head>
 <body>
     <script>
-       const readline = require("readline"); 
-const rl = readline.createInterface({ 
-    input: process.stdin,
-    output: process.stdout
-});
-
-var calcul = { 
-    '+': function (x, y) { return x + y },
-    '-': function (x, y) { return x - y },
-    '/': function (x, y) { return x / y }
-}
-
-rl.question("primul numar:", function(nr1) { 
-    rl.question("operatia ", function(op) { 
-        rl.question("al doile numar: ", function(nr2) { 
-            const x = parseInt(nr1)
-            const y = parseInt(nr2)
-
-            console.log(calcul[op](x, y)) 
-            process.exit() 
-        })
-    });
-});
-
+       var x = prompt(x);
+       char y = promp(y);
+       var z = prompt(z);
+       if ( y == '+' )
+       document.write x+z;
+       if ( y == '-')
+       document.write x-z;
+       if ( y == '*')
+       document.write x*z;
+       if (y == '/')
+       document.write x/z;
     </script>
 </body>
 </html>
